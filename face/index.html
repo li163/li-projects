@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(image/bg.png) no-repeat;
+        }
+
+        .person{
+           width:100px;height:100px;
+           border-radius: 50%;
+            margin:auto;
+            margin-top: 150px;
+            background: url(image/person.png) no-repeat;
+            background-size: 100%;
+        }
+        .name{
+            width:100%;height:40px;
+            margin-top:200px;
+            text-align: center;
+        }
+        input{
+            width:60%;
+            border:0;
+            border-bottom: 1px solid #000;
+        }
+        input:focus{
+            outline: none;
+        }
+        .btns{
+            width:100%;height:40px;
+            margin-top:50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .btn1{
+            width:40%;height:100%;
+            background: url(image/btn1.png) no-repeat;
+            background-size: 100%;
+        }
+        .btn2{
+            width:40%;height:100%;
+            background: url(image/btn3.png) no-repeat;
+            background-size: 100%;
+        }
+    </style>
+    <script>
+
+        window.onload=function(ev){
+            var btn1=document.querySelector(".btn1");
+            var input=document.querySelector("input")
+            btn1.onclick=function () {
+                if(input.value==""){
+                    var speech=window.speechSynthesis;
+                    var speechobj=new speechSynthesisUtterance()
+                    speechobj.text="请输入你的名字"
+                    speech.speak(speechobj)
+                }else{
+                    location.href="http://baidu.com"
+                }
+            }
+        }
+        </script>
+</head>
+<body>
+  <div class="person">
+
+  </div>
+
+  <div class="name">
+      <input type="text" placeholder="请输入名字">
+  </div>
+
+  <div class="btns">
+      <div class="btn1">
+
+      </div>
+      <div class="btn2">
+
+      </div>
+  </div>
+</body>
+</html>

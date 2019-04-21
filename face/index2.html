@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 200px;
+            border: 2px solid #000;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        .btn {
+            width: 150px;
+            height: 50px;
+            background: aquamarine;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff:
+            font-weight: bold;
+            margin: auto;
+            margin-top: 200px;
+            cursor: pointer;
+        }
+        video {
+            width: 150px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        canvas {
+            position: absolute;
+            left: 0;
+            top: 0
+        }
+    </style>
+    <script>
+        window.onload = function (ev) {
+            document.querySelector(".btn").onclick = function (ev) {
+                navigator.mediaDevices.getUserMedia(
+                    {
+                        video: {
+                            width: 150, height: 200
+                        }
+                    }
+                ).then(function (value) {
+                    var video = document.querySelector("video");
+                    video.srcObject = value
+                    var canvas = document.querySelector("canvas");
+                    var flag = true
+                    var num = 0
+                    video.onprogress = function (ev) {
+                        if (!flag) {
+                            return;
+                        }
+                        flag = false
+                        num++
+                        var cobj = canvas.getContext("2d")
+                        cobj.drawImage(video, 0, 0)
+                        data = (canvas.toDataURL("image/jpeg").substr(23))
+                        fetch("/send", {
+                            method: "post",
+                            headers: {
+                                "content-type": "application/x-www-form-urlencoded"
+                            },
+                            body: "url=" + data + "&name="+document.querySelector("input").value
+                        }).then(function (value2) {
+                            return value2.json()
+                        }).then(function (value2) {
+                            if (value2.error_code) {
+                                flag = true;
+                                console.log(value2)
+                                if (num == 5) {
+                                    var speech = window.speechSynthesis
+                                    var speechobj = new SpeechSynthesisUtterance()
+                                    speechobj.text = "请将脸放入框内"
+                                    speech.speak(speechobj)
+                                }
+                            } else {
+                                console.log(value2)
+                                var speech = window.speechSynthesis
+                                var speechobj = new SpeechSynthesisUtterance()
+                                speechobj.text = "采集完毕"
+                                speech.speak(speechobj)
+                                location.href="/checkpage"
+                            }
+                        })
+                    }
+                })
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <canvas width="150" height="200"></canvas>
+    <video src="" autoplay></video>
+</div>
+<div class="btn">
+    开启摄像头
+</div>
+</body>
+</html>
