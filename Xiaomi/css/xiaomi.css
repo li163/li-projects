@@ -1,0 +1,779 @@
+/*@import url(./base.css);*/
+/*以上是用来引用相应的css 的操作  或者是在相应的 html 中利用link 链接*/
+.main1{
+    width: auto;
+    min-height: 500px;
+    /*background-color: aqua;*/
+}
+.top{
+    width: auto;
+    height: 40px;
+    background-color: black;
+}
+.top .top-words{
+    width: 1226px;
+    height: 40px;
+    margin: 0px auto;
+}
+.top .top-words a{
+    color: #b0b0b0;
+}
+.top .top-title-left,.top .top-title-right{
+    float: left;
+}
+.top .top-title-left{
+    width: 1016px;
+    height: 40px;
+    /*background-color: #ff706f;*/
+    /*margin-left: 137px;*/
+}
+.top .top-title-word{
+    font-size: 10px;
+    line-height: 40px;
+    color: whitesmoke;
+}
+.top .top-title-tag{
+    width: auto;
+    height: 40px;
+    margin: 0px 9px;
+    color: #333333;
+}
+.top .top-title-right{
+    width: 210px;
+    height: 40px;
+    /*background-color: #b9f5a7;*/
+}
+/*.top-title-right .top-title-right1{*/
+    /*position: relative;*/
+    /*right: 0px;*/
+    /*top: 0px;*/
+    /*height: 40px;*/
+    /*width:auto;*/
+/*}*/
+.header{
+    width: 1226px;
+    height: 100px;
+    /*background-color: red;*/
+    margin: 0px auto;
+}
+.header .header-left{
+    width:62px;
+    height: 100px;
+    /*padding-top: 23px;*/
+    /*background-color: #b9f5a7;*/
+}
+.header-left .header-left-img{
+    width:62px;
+    height: 77px;
+    padding-top: 23px;
+}
+.header .header-mid{
+    width: 850px;
+    height: 100px;
+}
+.header-mid .header-mid-fen{
+    width: 120px;
+    height: 100px;
+    padding-left: 50px;
+    /*background-color: #b9f5a7;*/
+}
+.header-mid .header-mid-words{
+    width: auto;
+    height: 87px;
+    padding-top: 13px;
+    /*background-color: #333333;*/
+}
+.header-mid .header-mid-words a{
+    display: block;
+    padding: 26px 10px 38px 10px;
+    color: black;
+}
+.header .header-right{
+    width: 314px;
+    height: 100px;
+    /*background-color: #ff706f;*/
+}
+.header .header-left,.header-mid,.header-right,.header-mid-fen,.header-mid-words{
+    float: left;
+}
+.content1{
+    width: 1226px;
+    height: 832px;
+    /*background-color: #24cc23;*/
+    margin: 0px auto;
+}
+.content1 .content1-top{
+    width: 100%;
+    height: 644px;
+    margin-bottom: 30px;
+    /*background-color: red;*/
+}
+.content1-top .content1-top-up{
+    height: 470px;
+    width: 100%;
+    /*background-color: #f0b09b;*/
+    position: relative;
+}
+.content1-top-position1{
+    height: 448px;
+    width: 234px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /*background-color: black;*/
+    background:rgba(0,0,0,0.8);
+    padding-top: 22px;
+}
+.content1-top-position1 li{
+    /*display: block;*/
+    padding-left: 30px;
+    height: 42px;
+    /*background-color: #ff706f;*/
+}
+.content1-top-position1 li:hover{
+    background-color: darkorange;
+}
+.content1-top-position1 li .title{
+    font-size: 15px;
+    line-height: 42px;
+}
+.content1-top-position1 li .title i{
+    display: block;
+    float: right;
+}
+.content1-top-position2{
+    width: 41px;
+    height: 69px;
+    /*background-color: black;*/
+    position: absolute;
+    left: 234px;
+    top: 200px;
+    font-size: 45px;
+    color: white;
+}
+.content1-top-position3{
+    width: 41px;
+    height: 69px;
+    /*background-color: black;*/
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    font-size: 45px;
+    color: white;
+}
+.content1-top-position4{
+    width: 400px;
+    height: 27px;
+    /*background-color: black;*/
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.content1-top-position4 a{
+    display: block;
+    float: right;
+    padding-right: 10px;
+}
+.content1-top-position2:hover,.content1-top-position3:hover{
+    background:rgba(0,0,0,0.6);
+}
+.content1-top .content1-top-up img{
+    height: 470px;
+    width: 1226px;
+}
+.content1-top .content1-top-down{
+    margin-top: 4px;
+    height: 170px;
+    /*background-color: #b9f5a7;*/
+}
+.content1-top-down .content1-top-down-1{
+    width: 234px;
+    height: 170px;
+    background-color: #333;
+}
+.content1-top-down-1 > div{
+    width: 228px;
+    height: 164px;
+    padding: 3px 3px;
+    /*background-color: #ff706f;*/
+}
+.content1-top-down-11,.content1-top-down-13,.content1-top-down-16{
+    float: left;
+    height: 82px;
+    width: 70px;
+    padding-left: 3px;
+    padding-right: 3px;
+    /*background-color: #24cc23;*/
+}
+.content1-top-down-11 a,.content1-top-down-13 a,.content1-top-down-16 a{
+    display: block;
+    height: 55px;
+    width: 70px;
+    padding-top: 18px;
+    /*background-color: #24cc23;*/
+    border-right: 1px solid #888888;
+    position: relative;
+}
+.content1-top-down-13 a,.content1-top-down-16 a{
+    border-right: none;
+}
+.content1-top-down-11 a::before,.content1-top-down-13 a::before,.content1-top-down-16 a:before{
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 1px;
+    left: -2px;
+    bottom: -1px;
+    background-color: #888888;
+}
+.content1-top-down-1>div:nth-child(3) ~ .content1-top-down-1>a::before{
+    height: 0px;
+}
+.content1-top-down .content1-top-down-img{
+    margin-left: 14px;
+    width: 316px;
+    height: 170px;
+    background-color: #b9f5a7;
+}
+.content1-top-down .content1-top-down-img img{
+    width: 316px;
+    height: 170px;
+}
+.content1-top-down .content1-top-down-1,.content1-top-down .content1-top-down-img{
+    float: left;
+}
+.content1 .content1-down {
+    width: 1226px;
+    height: 116px;
+    /*background-color: black;*/
+}
+.content1 .content1-down img{
+    width: 1226px;
+    height: 116px;
+}
+
+/*      以下是 第二部分     */
+
+.main2{
+    width: 100%;
+    min-height: 500px;
+    background-color: #f5f5f5;
+}
+.main2 .main手机{
+    width: 1226px;
+    height:835px;
+    margin: 0px auto;
+    padding-top: 22px;
+    /*background-color: #ff706f;*/
+}
+.main手机 .main手机-top{
+    height: 58px;
+    /*background-color: #888888;*/
+}
+.main手机 .main手机-top h2{
+    line-height: 58px;
+    width: 500px;
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+}
+.main手机-top >p>a{
+    color: #424242;
+}
+.main手机-top >p>a:hover{
+    color: #ff8c00;
+}
+.main手机-top p{
+    float: right;
+    width: auto;
+    height: 58px;
+    line-height: 58px;
+    font-size: 16px;
+}
+.main手机 .main手机-mid{
+    width: 1226px;
+    height: 628px;
+    /*background-color: #ff706f;*/
+}
+.main手机-mid .main手机-mid1{
+    width: 234px;
+    height: 614px;
+    padding-left: 10px;
+    /*background-color: #24cc23;*/
+}
+.main手机-mid .main手机-mid1 img{
+    width: 234px;
+    height: 614px;
+}
+.main手机-mid .main手机-mid2{
+    height: 614px;
+    width: 978px;
+    padding-left: 4px;
+    /*background-color: #ff706f;*/
+}
+.main手机-mid2 >div{
+    position: relative;
+}
+.main手机-mid2 .positionAll{
+    position: relative;
+    left: 50%;
+    top: -20px;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.main手机-mid2-11{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    /*background-color: #24cc23;*/
+    background-color: white;
+}
+.main手机-mid2-11-words1{
+    width: 214px;
+    height: 27px;
+    margin: 0px 10px 2px;
+    text-align: center;
+}
+.main手机-mid2-11-words2 {
+    width: 214px;
+    height: 18px;
+    margin: 0px 10px 10px;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    white-space: nowrap; /*  一行显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main手机-mid2-11-words3{
+    width: 214px;
+    height: 27px;
+    margin: 0px 10px 14px;
+    text-align: center;
+    color: red;
+}
+.main手机-mid2-11>h3>a,.main手机-mid2-12>h3>a,.main手机-mid2-13>h3>a,.main手机-mid2-14>h3>a,.main手机-mid2-15>h3>a,.main手机-mid2-16>h3>a,.main手机-mid2-17>h3>a,.main手机-mid2-18>h3>a{
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+.main手机-mid2-12{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    /*background-color: #24cc23;*/
+    background-color: white;
+}
+.main手机-mid2-13{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    /*background-color: #24cc23;*/
+    background-color: white;
+}
+.main手机-mid2-14{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    background-color: white;
+    /*background-color: #24cc23;*/
+}
+.main手机-mid2-15{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    background-color: white;
+    /*background-color: #24cc23;*/
+}
+.main手机-mid2-16{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    /*background-color: #24cc23;*/
+    background-color: white;
+}
+.main手机-mid2-17{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    /*background-color: #24cc23;*/
+    background-color: white;
+}
+.main手机-mid2-18{
+    width: 234px;
+    height: 260px;
+    margin: 0px 0px 14px 10px;
+    padding: 20px 0px;
+    background-color: white;
+    /*background-color: #24cc23;*/
+}
+.main手机-mid2-11 img,.main手机-mid2-12 img,.main手机-mid2-13 img,.main手机-mid2-14 img,.main手机-mid2-15 img,.main手机-mid2-16 img,.main手机-mid2-17 img,.main手机-mid2-18 img{
+    width: 160px;
+    height: 160px;
+}
+.main手机-mid2-11-img a,.main手机-mid2-12-img a,.main手机-mid2-13-img a,.main手机-mid2-14-img a,.main手机-mid2-15-img a,.main手机-mid2-16-img a,.main手机-mid2-17-img a,.main手机-mid2-18-img a{
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0px auto 18px;
+}
+.main手机-mid2-11,.main手机-mid2-12,.main手机-mid2-13,.main手机-mid2-14,.main手机-mid2-15,.main手机-mid2-16,.main手机-mid2-17,.main手机-mid2-18{
+    float: left;
+}
+.main手机-mid2-11:hover,.main手机-mid2-12:hover,.main手机-mid2-13:hover,.main手机-mid2-14:hover,.main手机-mid2-15:hover,.main手机-mid2-16:hover,.main手机-mid2-17:hover,.main手机-mid2-18:hover{
+    box-shadow:2px 8px 5px 3px rgba(0,0,0,0.1);  /*阴影产生 x轴 y轴 阴影成程度 阴影扩散速度   是整体阴影*/
+    transform: translate(0px,-5px);
+}
+.main手机-mid2-11,.main手机-mid2-12,.main手机-mid2-13,.main手机-mid2-14,.main手机-mid2-15,.main手机-mid2-16,.main手机-mid2-17,.main手机-mid2-18{
+    transition: all 600ms linear;   /*每一个阴影出现时缓冲的时间*/
+}
+.main手机-mid .main手机-mid1,.main手机-mid .main手机-mid2{
+    float: left;
+}
+.main手机 .main手机-down{
+    margin-top: 28px;
+    margin-bottom: 22px;
+    width: 1226px;
+    height: 120px;
+    /*background-color: #b9f5a7;*/
+}
+.main手机 .main手机-down a img{
+    width: 1226px;
+    height: 120px;
+}
+
+/*   家电专区   */
+
+.main2 .mainStore{
+    width: 1226px;
+    height:835px;
+    margin: 0px auto;
+    padding-top: 22px;
+    /*background-color: #ff706f;*/
+}
+.main2 .mainStore1{
+    width: 1226px;
+    height:358px;
+    margin: 0px auto 22px;
+    padding-top: 22px;
+    /*background-color: #ff706f;*/
+}
+.main2 .mainStoreLast{
+    width: 1226px;
+    height:670px;
+    margin: 0px auto;
+    padding-top: 22px;
+    /*background-color: #ff706f;*/
+}
+/*   以上为主干部分   */
+
+
+.mainAll-top{
+    height: 58px;
+    /*background-color: #888888;*/
+}
+/*  定位*/
+.mainStore1 .mainAll-top{
+    position: relative;
+}
+.mainStore1 .mainAll-top-words{
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    width: auto;
+    height: 28px;
+    color: #333;
+}
+.mainStore1 .mainAll-top-words a{
+    display: block;
+    float: left;
+    width: auto;
+    height: 16px;
+    padding: 3px 5px;
+    margin: 1px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    text-align: center;
+}
+.mainStore1 .mainAll-top-words a:hover{
+    color: #ff8c00;
+}
+/*  定位 */
+
+.mainAll-top h2{
+    line-height: 58px;
+    width: 500px;
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+}
+.mainAll-top >div>a{
+    color: #333333;
+}
+.mainAll-top-words{
+    float: right;
+    width: 55%;
+    height: 48px;
+    padding-top: 10px;
+    /*line-height: 39px;*/
+}
+.mainAll-top-words p{
+    float: right;
+    padding-left: 27px;
+}
+.mainAll-top-words p a{
+    color: #424242;
+    line-height: 48px;
+    font-size: 16px;
+}
+.mainAll-top-words p a:hover{
+    color: #ff8c00;
+    border-bottom: 1px solid #ff8c00;
+}
+.mainAll-mid{
+    width: 1226px;
+    height: 628px;
+    /*background-color: #ff706f;*/
+}
+.mainAll-mid .mainAll-mid1{
+    width: 234px;
+    height: 614px;
+    padding-left: 10px;
+    /*background-color: #24cc23;*/
+}
+.mainAll-mid1 div{
+    width: 234px;
+    height: 300px;
+    margin: 0px 0px 14px 0px;
+    /*background-color: #24cc23;*/
+}
+.mainAll-mid1 .mainAll-mid11 a img,.mainAll-mid1 .mainAll-mid12 a img{
+    width: 234px;
+    height: 300px;
+}
+.mainAll-mid .mainAll-mid2{
+    height: 614px;
+    width: 978px;
+    padding-left: 4px;
+    /*background-color: #ff706f;*/
+}
+.mainAll-mid2 > div{
+    width: 234px;
+    height: 246px;
+    padding: 34px 0px 20px 0px;
+    margin: 0px 0px 14px 10px;
+    background-color: white;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.mainAll-mid2 .positionAll{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.mainAll-mid2-21-img{
+    width: 150px;
+    height: 150px;
+    margin: 0px 42px 18px;
+    /*background-color: #ff706f;*/
+}
+.mainAll-mid2-21-img a{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.mainAll-mid2-21-img a img{
+    width: 150px;
+    height: 150px;
+}
+.mainAll-mid2-21-words1 a{
+    display: block;
+    width: 214px;
+    height: 27px;
+    margin: 0px 10px 2px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    white-space: nowrap; /*  一行显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainAll-mid2-21-words2 {
+    width: 214px;
+    height: 22px;
+    margin: 0px 10px 3px;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-align: center;
+    white-space: nowrap; /*  一行显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainAll-mid2-21-words3{
+    width: 214px;
+    height: 22px;
+    margin: 0px 10px 8px;
+    text-align: center;
+    color: red;
+}
+
+/*点击时出现评论*/
+.mainAll-mid2-21{
+
+    /*overflow: hidden;*/
+}
+.mainAll-mid2 .commits{
+    width: 100%;
+    height: 70px;
+    background-color: #ff8c00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0px,70px);    /* 进行平移*/
+}
+.mainAll-mid2 > div:hover .commits{
+    transform: translate(0px,0px);       /* 点击时进行平移恢复原位*/
+}
+.mainAll-mid2 > div .commits{
+    transition: all 400ms linear;
+}
+/* 以上 点击时出现评论*/
+
+.commits p a{
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;             /* 两行显示 剩下的省略*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.commits span{
+    display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap; /*  一行显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mainAll-mid2 > div:hover,.mainAll-mid1 > div:hover{         /*    > 表示只是mainAll-mid2下的一级子元素*/
+    box-shadow: 3px 8px 5px 3px rgba(0,0,0,0.1);
+}
+.mainAll-mid2 > div,.mainAll-mid2 > div:hover{
+    transition: all 200ms linear;
+}
+/*   用来平移 2D转换  也可以放在上方*/
+.mainAll-mid2 > div:hover,.mainAll-mid1 > div:hover{         /*    > 表示只是mainAll-mid2下的一级子元素*/
+    transform: translate(0px,-5px);
+}
+.mainAll-mid28{
+    float: left;
+    width: 244px;
+    height:300px;
+}
+.mainAll-mid28-top{
+    width: 234px;
+    height: 93px;
+    padding-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 14px;
+    background-color: white;
+}
+.mainAll-mid28-top-1{
+    float: right;
+    width: 80px;
+    height: 87px;
+    /*background-color: #ff706f;*/
+}
+.mainAll-mid28-top-1 img{
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+.mainAll-mid28-top h3 a{
+    display: block;
+    margin: -10px 110px 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; /*  一行显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mainAll-mid28-top p{
+    width: 150px;
+    font-size: 14px;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+}
+.mainAll-mid28-down{
+    width: 234px;
+    height: 93px;
+    padding-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 14px;
+    background-color:white;
+}
+
+
+.mainAll-mid28-top:hover,.mainAll-mid28-down:hover{
+    box-shadow: 1px -8px 5px 3px #c4f5a7ab;
+}
+.mainAll-mid28-top,.mainAll-mid28-down{
+    transition: all 500ms linear;
+}
+.mainAll-mid .mainAll-mid1,.mainAll-mid .mainAll-mid2{
+    float: left;
+}
+.mainAll-down{
+    margin-top: 28px;
+    margin-bottom: 22px;
+    width: 1226px;
+    height: 120px;
+    /*background-color: #b9f5a7;*/
+}
+.mainAll-down a img{
+    width: 1226px;
+    height: 120px;
+}
+
+/*定位的  tag 的颜色 用于手机家电等 小图片上部*/
+.green{
+    background: #83c44e;
+}
+.red{
+    background: red;
+}
+/*  */
