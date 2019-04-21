@@ -1,0 +1,503 @@
+body , h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, pre, form, table{
+    margin: 0;
+    padding: 0;
+}
+/*把全部的相同的标签默认的样式去掉   以上同理*/
+/*    *{      但是此种情况不建议使用
+
+        }     */
+ul ,ol, li{
+    list-style: none;  /*  这些样式在前面有自带的 点 用list-style: none;是为了去掉*/
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #ffffff;   /*  设置此颜色为了防止浏览器自动设置个性化颜色*/
+    font: 16px/1.5 'Microsoft YaHei',sans-serif;
+    color: #333333;
+}
+.header{
+    width: 100%;
+    height: 46px;
+    background-color:black;
+}
+.headerContent{      /*   header 内部的产品布局*/
+    width: 1100px;
+    height: 100%;   /*用来和 .header{  的高度一样高*/
+    /*background-color: red;*/
+    margin: 0 auto;   /* 此处左右自动上下为0 让其自动对左右对齐同样的距离  所以只能居中*/
+}
+.headerContent .headleft{
+    width: 300px;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+.headerContent .headright{
+    width: 800px;
+    height: 30px;
+    /*color: white;*/
+    font-size: 15px;
+}
+.headleft,.headright{
+float: left;
+}
+.headright a{
+    display: block;
+    width: 80px;
+    float: right;
+    height: 30px;
+    color: white;
+    margin-left:40px;
+    line-height: 46px;
+}
+.pics{
+    width:1100px;
+    height: 155px;
+    /*background-color: black;*/
+    margin: 20px auto;
+
+}
+/* 以下或者用  .pics .pic{}  来表示 */
+.pic{       /*  pics 内部产品布局*/
+    width: 354px;
+    height: 100%;
+    background-color: aqua;
+    float: left;   /*  用float 改变了由从上而下的排序变为横向排序*/
+    /*  float: right   是用来从右侧开始排序   与 lift 相反*/
+    border-radius: 20px;
+    position: relative;
+}
+.pic a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.pic a img{
+    width: 100%;
+}
+.pic .picwords{
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background:rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
+}
+.pics .pic2{      /*  pics 内部的 pic 内的  pic2 的产品布局*/
+    margin: 0px 19px;
+    border-radius: 20px;
+}
+.main{
+    width:1100px;
+    height: auto;
+    min-height: 500px;   /* 必须设置的 用来现实最低高度 为了防止页面东西少 从而不美观*/
+    /*background-color: #f0b09b;*/
+    margin: 0 auto;
+}
+.main .main1{
+
+    width: 770px;
+    min-height: 500px;
+    /*background-color: blueviolet;*/
+
+}
+.main .main2{
+    width: 308px;
+    min-height: 500px;
+    /*background-color: blueviolet;*/
+    margin-left: 22px;
+}
+.main1,.main2{
+    float: left;
+}
+.main1 .part1{
+    border-radius: 20px;
+    float:left;
+    width: 770px;
+    height: 638px;
+    background-color: whitesmoke;
+    /*margin-top: 22px;*/
+}
+.left11,.left12,.left13,.left14,.left15,.left16{
+    float: left;
+    padding: 20px;
+    /*width: 210px;*/
+    /*height: 235px;*/
+    /*background-color:white;*/
+}
+.left11,.left12,.left14,.left15{
+    width: 209px;
+    height: 235px;
+    border-right: 1px solid black;
+}
+.left11,.left12,.left13{
+    width: 209px;
+    height: 234px;
+    border-bottom: 1px solid black;
+}
+.left16 {
+    width: 209px;
+    height: 234px;
+}
+.part1head{
+    width: 770px;
+    height: 40px;
+    border-bottom: 3px solid black;
+}
+.left11-img{
+    height: 100px;
+    width: 100%;
+    background-color: #ff706f;
+    overflow: hidden;
+}
+.left11-head{
+    height: 30px;
+    width: 100%;
+    margin-top: 7px;
+    white-space: nowrap;   /*  在一行显示*/
+    overflow: hidden;       /*  在一行显示 多的 隐藏*/
+    text-overflow: ellipsis;     /*  在一行显示 隐藏的用。。。 显示*/
+    /*background-color: #62ff43;*/
+}
+.left11-words{
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*background-color:#ff706f;*/
+}
+.left11-down{
+    width: 100%;
+    height: 20px;
+    margin-top: 3px;
+    /*background-color: black;*/
+}
+.left11:hover,.left12:hover,.left13:hover,.left14:hover,.left15:hover,.left16:hover{
+    box-shadow:2px 2px 5px 3px #f5f5f5;  /*阴影产生 x轴 y轴 阴影成程度 阴影扩散速度   是整体阴影*/
+}
+.left11,.left12,.left13,.left14,.left15,.left16{
+    transition: all 600ms linear;   /*每一个阴影出现时缓冲的时间*/
+}
+.left11:hover img,.left12:hover img,.left13:hover img,.left14:hover img,.left15:hover img,.left16:hover img{
+    transform: scale(1.2);  /*图片的放大倍数*/
+}
+.left11 img,.left12 img,.left13 img,.left14 img,.left15 img,.left16 img{
+    transition: all 800ms linear;    /*每一个图片出现时缓冲的时间*/
+}
+.main1 .part2{
+    border-radius: 20px;
+    float: left;
+    width: 770px;
+    height: 3480px;
+    background-color: whitesmoke;
+    margin-top: 22px;
+}
+.part2head{
+    width: 770px;
+    height: 40px;
+    border-bottom: 3px solid black;
+}
+.left21 .left21-top{
+    display: block;
+    padding: 10px 0px;
+}
+.left21-top a{
+    color: black;
+}
+.left21 .left21-mid{
+    width: 100%;
+    height: 150px;
+}
+.left21-mid1,.left21-mid2{
+    float: left;
+}
+.left21-mid1{
+    height: 150px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.left21-mid2{
+    height: 150px;
+    width: 70%;
+}
+.left21-mid2 p{
+    color: #888;
+    padding-top: 30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.left21 .left21-down{
+    margin-top: 15px;
+}
+.left21-down1{
+    float: left;
+}
+.left21-down1 span{
+    padding: 0px 10px 0px 10px;
+}
+.left21-down2{
+    float: right;
+}
+.left21,.left22,.left23,.left24,.left25,.left26,.left27,.left28,.left29,.left210,.left211,.left212,.left213,.left214{
+    width: 750px;
+    height: 244px;
+    border-bottom: 1px solid black;
+    /*background-color: #ff706f;*/
+}
+.left21:hover,.left22:hover,.left23:hover,.left24:hover,.left25:hover,.left26:hover,.left27:hover,.left28:hover,.left29:hover,.left210:hover,.left211:hover,.left212:hover,.left213:hover,.left214:hover{
+    box-shadow:2px 2px 5px 5px #f5f5f5;  /*阴影产生 x轴 y轴 阴影成程度 阴影扩散速度   是整体阴影*/
+}
+.left21,.left22,.left23,.left24,.left25,.left26,.left27,.left28,.left29,.left210,.left211,.left212,.left213,.left214{
+    transition: all 600ms linear;   /*每一个阴影出现时缓冲的时间*/
+}
+.left21:hover img,.left22:hover img,.left23:hover img,.left24:hover img,.left25:hover img,.left26:hover img,.left27:hover img,.left28:hover img,.left29:hover img,.left210:hover img,.left211:hover img,.left212:hover img,.left213:hover img,.left214:hover img{
+    transform: scale(1.15);  /*图片的放大倍数*/
+}
+.left21 img,.left22 img,.left23 img,.left24 img,.left25 img,.left26 img,.left27 img,.left28 img,.left29 img,.left210 img,.left211 img,.left212 img,.left213 img,.left214 img{
+    transition: all 800ms linear;    /*每一个图片出现时缓冲的时间*/
+}
+.main2 .right1{
+    width: 288px;
+    height: 371px;
+    padding: 0px 10px;
+    background-color: whitesmoke;
+    margin-bottom: 22px;
+    border-radius: 20px;
+}
+/*.right1 .right1headleft{*/
+    /*width: 90px;*/
+    /*height: 42px;*/
+    /*border-bottom:3px solid #000000;*/
+/*}*/
+/*.right1 .right1headright{*/
+    /*width: 90px;*/
+    /*height: 42px;*/
+    /*border-bottom:3px solid #000000;*/
+/*}*/
+.right1 .right1head{
+    padding: 0px 8px;
+    width:288px;
+    height:42px ;
+    position: relative;
+}
+.right1 .right1head > h2{
+    width:272px;
+    /*background-color: #24cc23;*/
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+.right1 .right1head > h2::before{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    left:8px;
+    bottom: 0px;
+}
+.right1 .right1head > h2::after{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    right: 18px;
+    bottom: 0px;
+}
+/*.right1 .right1headleft,.right1 .right1headmid,.right1 .right1headright{*/
+    /*float: left;*/
+/*}*/
+.imgr{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: #ff706f;
+}
+.right1body{
+    margin-top: 30px;
+}
+.right1body p{
+    height: 30px;
+    width: 250px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #b9f5a7;
+}
+.main2 .right2{
+    width: 308px;
+    height: 68px;
+    background-color: blueviolet;
+    margin-bottom: 22px;
+    border-radius: 20px;
+}
+.main2 .right3{
+    width: 308px;
+    height: 1266px;
+    background-color:whitesmoke;
+    margin-bottom: 22px;
+    border-radius: 20px;
+}
+.right3 .right3head{
+    padding: 0px 8px;
+    width:288px;
+    height:42px ;
+    position: relative;
+}
+.right3 .right3head > h2{
+    width:272px;
+    /*background-color: #24cc23;*/
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+.right3 .right3head > h2::before{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    left:8px;
+    bottom: 0px;
+}
+.right3 .right3head > h2::after{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    right: 8px;
+    bottom: 0px;
+}
+.right3 .right3body{
+    margin-top: 20px;
+    height: 177px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.right3body .right3body1 img{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 130px;
+}
+.right3body .right3body1 p{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 130px;
+    line-height: 1.6;
+    padding-left: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #888;
+}
+.right3 .right3body a{
+    color: black;
+}
+.right3body:hover,.right3body:hover,.right3body:hover,.right3body:hover,.right3body:hover,.right3body:hover{
+    box-shadow:2px 2px 5px 3px #B9F5A7;  /*阴影产生 x轴 y轴 阴影成程度 阴影扩散速度   是整体阴影*/
+}
+.right3body,.right3body,.right3body,.right3body,.right3body,.right3body{
+    transition: all 600ms linear;   /*每一个阴影出现时缓冲的时间*/
+}
+.main2 .right5{
+    width: 308px;
+    height: 1226px;
+    background-color: whitesmoke;
+    margin-bottom: 22px;
+    border-radius: 20px;
+}
+.right5 .right5body{
+    margin-top: 20px;
+    height: 177px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.right5body .right5body1 img{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 130px;
+}
+.right5body .right5body1 p{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 130px;
+    padding-left: 5px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #888;
+}
+.right5body a{
+    color: black;
+}
+.right5 .right5head{
+    padding: 0px 8px;
+    width:288px;
+    height:42px ;
+    position: relative;
+}
+.right5 .right5head > h2{
+    width:272px;
+    /*background-color: #24cc23;*/
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+.right5 .right5head > h2::before{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    left:8px;
+    bottom: 0px;
+}
+.right5 .right5head > h2::after{   /*  > 表示前面那个类下边的h2   ::before  表示在前边添加东西*/
+    content: '';  /*  内容为空*/
+    background-color: black;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    right: 8px;
+    bottom: 0px;
+}
+.right5body:hover,.right5body:hover,.right5body:hover,.right5body:hover,.right5body:hover,.right5body:hover{
+    box-shadow:2px 2px 5px 3px #B9F5A7;  /*阴影产生 x轴 y轴 阴影成程度 阴影扩散速度   是整体阴影*/
+}
+.right5body,.right5body,.right5body,.right5body,.right5body,.right5body{
+    transition: all 600ms linear;   /*每一个阴影出现时缓冲的时间*/
+}
+.main2 .right6{
+    width: 308px;
+    height: 384px;
+    background-color: whitesmoke;
+    margin-bottom: 22px;
+    border-radius: 20px;
+}
